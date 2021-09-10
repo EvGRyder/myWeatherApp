@@ -1,0 +1,148 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(navy), to(black));
+  background: linear-gradient(navy, black);
+}
+
+.current-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  border: solid;
+  background-color: rgba(220, 220, 220, 0.55);
+}
+
+.current-container .current-header {
+  padding-top: 15px;
+}
+
+.current-container .current-header .current-place {
+  font-size: 1.75em;
+}
+
+.current-container .current-header .current-time {
+  padding: 7px 0;
+  font-size: 0.75rem;
+}
+
+.current-container .cloud-desc {
+  margin: 0;
+  padding: 0;
+  top: -40px;
+}
+
+.search-container {
+  position: absolute;
+  bottom: 0;
+  margin-right: 0px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.search-container .city-input {
+  width: 60%;
+  border: none;
+  border-bottom: solid 1px;
+  background-color: rgba(220, 220, 220, 0);
+}
+
+.search-container .city-query {
+  margin-right: 0px;
+}
+
+.temp-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.temp-container .city-temp {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 1.5em;
+}
+
+.daily-forecast-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: absolute;
+  bottom: 5px;
+}
+
+.daily-forecast-bar .day-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  width: 115px;
+  height: 150px;
+  border: solid;
+  background: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+}
+
+.daily-forecast-bar .day-card .high-temp {
+  color: #585858;
+  font-size: 0.75em;
+  margin-right: 10px;
+}
+
+.daily-forecast-bar .day-card .the-temp {
+  position: relative;
+  height: auto;
+  padding: 10px;
+}
+
+.daily-forecast-bar .day-card .the-temp img {
+  width: 20px;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.daily-forecast-bar .day-card .low-temp {
+  color: #585858;
+  font-size: 0.75em;
+  text-align: right;
+}
+
+.daily-weather {
+  width: 100%;
+  margin: 10px 0;
+}
+/*# sourceMappingURL=style.css.map */

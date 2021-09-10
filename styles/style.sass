@@ -1,0 +1,90 @@
+*
+  box-sizing: border-box
+html
+  height: 100%
+  margin: 0
+  padding: 0
+body 
+  margin: 0
+  padding: 0
+  background: linear-gradient(navy, black)
+
+
+.current-container
+  position: relative
+  display: flex
+  flex-direction: column
+  width: 200px
+  height: 300px
+  align-items: center
+  margin: 20px
+  border: solid
+  background-color: rgba(220, 220, 220, 0.55)
+  .current-header
+    padding-top: 15px
+    .current-place
+      font-size: 1.75em
+    .current-time
+      padding: 7px 0
+      font-size: 0.75rem
+  .cloud-desc
+    margin: 0
+    padding: 0
+    top: -40px
+
+.search-container
+  position: absolute
+  bottom: 0
+  margin-right: 0px
+  padding-left: 20px
+  padding-bottom: 5px
+  .city-input
+    width: 60%
+    border: none
+    border-bottom: solid 1px
+    background-color: rgba(220, 220, 220, 0)
+  .city-query
+    margin-right: 0px
+
+.temp-container
+  display: flex
+  .city-temp
+    align-self: center
+    font-size: 1.5em
+
+.daily-forecast-bar
+  display: flex
+  width: 100%
+  justify-content: space-evenly
+  position: absolute
+  bottom: 5px
+  .day-card
+    display: flex
+    flex-direction: column
+    padding: 10px
+    width: 115px
+    height: 150px
+    border: solid
+    background: white
+    align-items: center
+    border-radius: 8px
+    .high-temp
+      color: #585858
+      font-size: 0.75em
+      margin-right: 10px
+    .the-temp
+      position: relative
+      height: auto
+      padding: 10px
+      img
+        width: 20px
+        position: absolute
+        margin-left: 5px
+    .low-temp
+      color: #585858
+      font-size: 0.75em
+      text-align: right
+
+.daily-weather
+  width: 100%
+  margin: 10px 0
