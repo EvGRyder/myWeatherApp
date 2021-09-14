@@ -9,6 +9,8 @@ body
   padding: 0
   background: linear-gradient(navy, black)
 
+main
+  display: flex
 
 .current-container
   position: relative
@@ -52,6 +54,17 @@ body
     align-self: center
     font-size: 1.5em
 
+.histogram
+  border: solid
+  width: 500px
+  height: 500px
+  background-color: white
+  margin: 50px
+  margin-left: auto
+  header
+    text-align: center
+    font-size: 40em
+  
 .daily-forecast-bar
   display: flex
   width: 100%
@@ -61,13 +74,17 @@ body
   .day-card
     display: flex
     flex-direction: column
-    padding: 10px
+    padding: 5px
     width: 115px
     height: 150px
     border: solid
-    background: white
+    background: lightgrey
     align-items: center
     border-radius: 8px
+    header
+      border-bottom: solid 1px
+      width: 100%
+      padding: 2px
     .high-temp
       color: #585858
       font-size: 0.75em

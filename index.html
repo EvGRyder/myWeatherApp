@@ -8,28 +8,31 @@
   <title>Document</title>
 </head>
 <body>
+  <main>
+    <div class="current-container">
+      <header class="current-header">
+        <div class="current-time"></div>
+        <div class="current-place"></div>
+      </header>
+      <div class="temp-container">
+        <img src="img/clouds.png" width="50px" alt="hI" class="cloud-icon">
+        <div class="city-temp"></div>
+      </div>
+      <div class="cloud-desc"></div>
 
-  <div class="current-container">
-    <header class="current-header">
-      <div class="current-time"></div>
-      <div class="current-place"></div>
-    </header>
-    <main class="temp-container">
-      <img src="img/clouds.png" width="50px" alt="hI" class="cloud-icon">
-      <div class="city-temp"></div>
-    </main>
-    <div class="cloud-desc"></div>
-
-
-    <div class="search-container">
-      <label for="city-input" >
-        <input type="text" class='city-input' id='city-input' placeholder='Enter city'>
-        <span class="city-query">
-          <img alt="" srcset="" height="15px" class="city-search">
-        </span>
-      </label>
+      <div class="search-container">
+        <label for="city-input" >
+          <input type="text" class='city-input' id='city-input' placeholder='Enter city'>
+          <span class="city-query">
+            <img alt="" srcset="" height="15px" class="city-search">
+          </span>
+        </label>
+      </div>
     </div>
-  </div>
+
+    <div class="histogram"></div>
+
+  </main>
 
   <footer class="daily-forecast-bar">
   </footer>

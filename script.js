@@ -1,5 +1,7 @@
 import HandleCurrent from "./components/Current.js"
 import HandleDaily from "./components/Daily.js"
+import HandleHourly from "./components/Hourly.js"
+
 // import getOneCall from "./components/FetchWeather.js"
 
 const citySearcher = document.querySelector('.city-search')
@@ -9,6 +11,7 @@ const citySearched = document.querySelector('.city-input')
 const FullDisplay = () => {
   HandleCurrent()
   HandleDaily()
+  HandleHourly()
 }
 
 FullDisplay();

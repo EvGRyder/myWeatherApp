@@ -12,7 +12,7 @@ const dailyCardOG = (day, date) => {
   const container = document.createElement('div')
   container.classList.add('day-card')
 
-  const theDay = document.createElement('div')
+  const theDay = document.createElement('header')
   theDay.textContent = DayToName(date.getDay())
 
   const theWeather = document.createElement('div')
