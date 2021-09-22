@@ -1,5 +1,6 @@
 import WeatherHandler from "../WeatherHandler.js"
 import { DayToName, Tomorrow } from "./TimeFormat.js"
+import KtoC from "./TempConverstions.js"
 
 const WeatherObj = WeatherHandler()
 const DailyWeather = WeatherObj.getDaily()
@@ -71,8 +72,6 @@ const setCloud = (desc) => {
     case 'Rain': return './components/img/rain.png'; break
   }
 }
-
-const KtoC = (kelvin) => `${Math.ceil(kelvin - 273.15)}\u00B0C`
 
 /*
 {

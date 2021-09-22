@@ -93,17 +93,57 @@ main {
 }
 
 .histogram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: solid;
   width: 500px;
-  height: 500px;
+  height: auto;
   background-color: white;
   margin: 50px;
   margin-left: auto;
 }
 
-.histogram header {
+.histogram-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.histogram-container header {
   text-align: center;
-  font-size: 40em;
+}
+
+.histogram-container .hour-card {
+  background: rgba(73, 73, 94, 0.486);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+  height: 100%;
+  border-bottom: solid 1px;
+}
+
+.histogram-container .hour-card .hourly-hour {
+  background-color: black;
+  color: white;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  width: 25%;
+  text-align: center;
+}
+
+.histogram-container .hour-card .hourly-temp {
+  padding-left: 15px;
 }
 
 .daily-forecast-bar {

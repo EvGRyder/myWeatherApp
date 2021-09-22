@@ -25,6 +25,8 @@ const formatMonth = (month) => {
 }
 
 const formatHour = (hours, minutes) => {
+  minutes += ""
+  if (minutes.length == 1) minutes = "0" + minutes
   if (hours == 0) return `12:${minutes}AM`
   if (hours < 12) return `${hours}:${minutes}AM`
   if (hours == 12) return `${hours}:${minutes}PM`
@@ -66,4 +68,4 @@ const Tomorrow = (day) => {
   return day
 }
 
-export { TimeFormat, DayToName, Tomorrow }
+export { TimeFormat, DayToName, Tomorrow, formatHour }

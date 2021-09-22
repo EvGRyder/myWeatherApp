@@ -28,5 +28,7 @@ const KtoC = (kelvin) => `${Math.ceil(kelvin - 273.15)}\u00B0C`
 const setCloud = (desc) => {
   switch(desc) {
     case 'Clouds': return './components/img/clouds.png'; break
+    case 'Clear': return './components/img/clear.png'; break
+    case 'Rain': return './components/img/rain.png'; break
   }
 }

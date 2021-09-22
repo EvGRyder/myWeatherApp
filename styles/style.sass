@@ -55,15 +55,36 @@ main
     font-size: 1.5em
 
 .histogram
+  display: flex
   border: solid
   width: 500px
-  height: 500px
+  height: auto
   background-color: white
   margin: 50px
   margin-left: auto
+.histogram-container
+  display: flex
+  flex-direction: column
   header
     text-align: center
-    font-size: 40em
+  .hour-card
+    background: rgba(73, 73, 94, 0.486)
+    display: flex
+    align-items: center
+    width: 500px
+    height: 100%
+    border-bottom: solid 1px
+    .hourly-hour
+      background-color: black
+      color: white
+      padding-left: 15px
+      padding-top: 7px
+      padding-bottom: 5px
+      margin-bottom: 10px
+      width: 25%
+      text-align: center
+    .hourly-temp
+      padding-left: 15px
   
 .daily-forecast-bar
   display: flex
